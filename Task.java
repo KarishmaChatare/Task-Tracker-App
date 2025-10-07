@@ -9,6 +9,9 @@ public class Task {
     private Long id;
     private String title;
     private boolean completed;
+    private String detail;              // for extra commands or task details
+    private LocalDateTime reminderTime; // for alarm/reminder
+
 
     public Task() {}
 
