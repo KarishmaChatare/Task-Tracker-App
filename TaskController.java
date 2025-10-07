@@ -35,6 +35,15 @@ public class TaskController {
         return repository.save(t);
     }
 
+    // ==============================
+// FUTURE: Connect to MySQL
+// ==============================
+// 1️⃣ Install MySQL on your machine or use a cloud MySQL DB
+// 2️⃣ Create a database: CREATE DATABASE taskdb;
+// 3️⃣ Update application.properties with MySQL URL, username, password
+// 4️⃣ Change spring.jpa.hibernate.ddl-auto=update
+// 5️⃣ Restart the backend. Spring Boot will create the tables automatically
+
     @DeleteMapping("/{id}")
     public void deleteTask(@PathVariable Long id) {
         repository.deleteById(id);
